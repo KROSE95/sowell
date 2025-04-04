@@ -9,7 +9,21 @@ import SwiftUI
 
 struct HomePageView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            VStack {
+                Text("4 April 2025")
+            }
+            VStack {
+                Text("Good Morning, Kayley ☀️")
+            }
+            VStack {
+                Text("How do you feel today?")
+            }
+            
+            MoodButton(title: "Track Mood") {
+                        // Handle tracking logic
+                    }
+        }
     }
 }
 

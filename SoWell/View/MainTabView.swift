@@ -11,14 +11,15 @@ struct MainTabView: View {
     var body: some View {
         
         TabView {
-            Tab("Home", systemImage: "house") {
-                HomePageView()
-            }
-            
             
             Tab("Calendar", systemImage: "calendar") {
                 CalendarView()
             }
+            
+            Tab("Home", systemImage: "house") {
+                HomePageView()
+            }
+            
             
             Tab("Chart", systemImage: "chart.bar.xaxis.ascending") {
                 ChartView()
@@ -27,14 +28,14 @@ struct MainTabView: View {
         }
     }
 }
-        
-        #Preview {
-            MainTabView()
-        }
-        
-        
-        
-        
-        
-        
-    
+
+#Preview {
+    MainTabView()
+}
+
+
+
+
+
+
+
